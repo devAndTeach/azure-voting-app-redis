@@ -1,0 +1,11 @@
+https://docs.microsoft.com/en-us/azure/developer/jenkins/deploy-from-github-to-aks
+
+
+Registering kubectl client to communicate w/ an AKS instance using Azure CLI
+
+https://github.com/microsoft/MCW-Cloud-native-applications/blob/master/Hands-on%20lab/HOL%20step-by-step%20-%20Cloud-native%20applications%20-%20Developer%20edition.md#task-1-tunnel-into-the-azure-kubernetes-service-cluster
+
+
+Using Azure CLI to logon w/o browser/interactive/basic auth
+
+az login --service-principal   -u <username> -p <password> -t <tenant>

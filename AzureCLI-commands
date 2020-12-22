@@ -1,0 +1,20 @@
+# Store the login server string
+acrloginserver=$(az acr list --resource-group rg-jenkinsqwikstart-eastus-001 --query "[].{acrLoginServer:loginServer}" --output tsv)
+
+
+# Autogenerates a service principal against the current tenant and subscription
+
+$ az ad sp create-for-rbac --skip-assignment
+
+The command above generates the following results
+
+
+
+ACR_ID=$(az acr show --resource-group rg-jenkinsqwikstart-eastus-001 --name $acrloginserver --query "id" --output tsv)
+
+az role assignment create --assignee <appId> --role Contributor --scope $ACR_ID
+
+
+
+
+
